@@ -1,0 +1,15 @@
+definition_version: 2
+entities:
+  gallery:
+    type: streamlit
+    identifier:
+      name: gallery
+      database: gallery_db
+      schema: hub
+    title: App Gallery
+    comment: Launch every Streamlit app in GALLERY_DB.APPS from one place.
+    query_warehouse: gallery_wh
+    main_file: streamlit_app.py
+    artifacts:
+      - streamlit_app.py
+      - environment.yml
